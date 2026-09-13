@@ -1,264 +1,311 @@
-🤖 Corinna AI
-AI-Powered Sales Automation & Customer Engagement Platform
+# 🤖 Corinna Ai
+# AI-Powered Sales & Customer Engagement SaaS Platform
 
-Corinna AI is a modern SaaS platform that helps businesses automate customer conversations, capture and qualify leads, schedule appointments, showcase products and services, and turn website visitors into potential customers.
+A production-oriented **AI-powered SaaS platform** designed to help businesses automate customer communication, lead generation, appointment booking, and sales activities through an intelligent chatbot.
 
-It provides businesses with an intelligent AI chatbot that can interact with customers in real time and assist them throughout their sales journey — from answering questions to collecting lead information, booking appointments, and supporting purchases.
+The platform allows businesses to configure an AI chatbot and embed it into their websites, enabling customers to interact with the business in real time.
 
-✨ Overview
+---
 
-Corinna AI is designed to work as an AI-powered virtual sales assistant for businesses.
+## 📌 Overview
 
-Instead of requiring a business representative to respond manually to every website visitor, Corinna AI can engage with customers automatically, understand their needs, provide relevant information, and guide them toward the next step.
+The **AI-Powered Sales & Customer Engagement SaaS Platform** combines conversational AI with essential business automation tools.
 
-Businesses can manage their chatbot, customers, leads, appointments, products, payments, and branding from a centralized platform.
+The system enables businesses to:
 
-🚀 Key Features
-🧠 AI Sales Assistant
+* 💬 Interact with customers using an AI chatbot
+* 🎯 Capture and manage potential leads
+* 🤖 Automate sales conversations
+* 📅 Manage customer appointments
+* 💳 Process online payments
+* 📊 Monitor business activities through a dashboard
+* 🎨 Customize their chatbot
+* 🌐 Embed the chatbot into their websites
+* ⚡ Support real-time communication
 
-Corinna AI provides an intelligent chatbot capable of having natural conversations with website visitors.
+The project follows a **Software as a Service (SaaS)** architecture, allowing multiple businesses to use the platform.
+
+---
+
+## ✨ Key Features
+
+### 🤖 AI Chatbot
+
+* AI-powered conversational chatbot
+* Natural-language customer interaction
+* Business-specific responses
+* Automated sales conversations
+* Customer query handling
+
+### 👥 Lead Management
+
+* Automatic lead collection
+* Customer information management
+* Lead qualification
+* Centralized lead dashboard
+
+### 📅 Appointment Booking
+
+* Customer appointment scheduling
+* Available time-slot management
+* Appointment management through dashboard
+
+### 💳 Payment Integration
+
+* Online payment processing
+* Stripe integration
+* Secure payment workflow
+
+### 📊 Business Dashboard
+
+* Centralized business management
+* Lead monitoring
+* Appointment management
+* Chatbot configuration
+* Business activity overview
+
+### 🎨 Chatbot Customization
+
+* Custom chatbot appearance
+* Business-specific configuration
+* Customizable chatbot behavior
+* Website integration
+
+### ⚡ Real-Time Communication
+
+* Real-time messaging
+* Instant updates
+* Real-time customer interactions
+
+---
+
+## 🛠️ Technology Stack
+
+| Technology       | Purpose                          |
+| ---------------- | -------------------------------- |
+| **Next.js 15**   | Full-stack web application       |
+| **JavaScript**   | Application development          |
+| **PostgreSQL**   | Database                         |
+| **Prisma**       | Database ORM                     |
+| **Clerk**        | Authentication & user management |
+| **OpenAI API**   | AI chatbot                       |
+| **Stripe**       | Payment processing               |
+| **Pusher**       | Real-time communication          |
+| **Uploadcare**   | File storage                     |
+| **Shadcn UI**    | UI components                    |
+| **Git & GitHub** | Version control                  |
+
+---
+
+## 🏗️ System Architecture
+
+The application follows a modern SaaS architecture:
+
+```text
+                    ┌─────────────────────┐
+                    │      Customer       │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   Website Chatbot   │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │     Next.js App     │
+                    └──────────┬──────────┘
+                               │
+              ┌────────────────┼────────────────┐
+              │                │                │
+              ▼                ▼                ▼
+       ┌────────────┐   ┌────────────┐   ┌────────────┐
+       │  OpenAI    │   │ PostgreSQL │   │   Stripe   │
+       │    AI      │   │  Database  │   │  Payments  │
+       └────────────┘   └────────────┘   └────────────┘
+              │                │
+              ▼                ▼
+       ┌────────────┐   ┌────────────┐
+       │   Pusher   │   │   Prisma   │
+       │ Real-time  │   │    ORM     │
+       └────────────┘   └────────────┘
+```
+
+---
+
+## 🔄 System Workflow
+
+```text
+Business Registration
+        ↓
+Business Configuration
+        ↓
+Chatbot Setup
+        ↓
+Website Integration
+        ↓
+Customer Interaction
+        ↓
+AI Processes Customer Query
+        ↓
+AI Generates Response
+        ↓
+Lead Information Collection
+        ↓
+Lead Qualification
+        ↓
+Appointment / Payment
+        ↓
+Business Dashboard
+```
 
-The AI can:
+---
 
-Answer customer questions
-Understand customer needs
-Discuss products and services
-Qualify potential customers
-Collect customer information
-Guide customers through the sales process
-Recommend relevant products or services
-Help customers move toward booking or purchasing
-💬 Website Chatbot
+## 👤 User Roles
 
-Businesses can provide an AI-powered chat experience directly on their website.
+### Business Administrator
 
-The chatbot allows visitors to:
+Business administrators can:
 
-Ask questions
-Learn about products and services
-Get instant responses
-Share their information
-Discuss their requirements
-Book appointments
-Continue toward a purchase
+* Manage business information
+* Configure the AI chatbot
+* Manage leads
+* Manage appointments
+* Configure products/services
+* Monitor customer conversations
+* Manage chatbot customization
 
-This creates a 24/7 customer engagement experience without requiring a human representative to be available at all times.
+### Customer
 
-🎯 Lead Generation & Qualification
+Customers can:
 
-Corinna AI automatically turns customer conversations into potential business leads.
+* Interact with the AI chatbot
+* Ask questions
+* Receive business information
+* Provide contact information
+* Book appointments
+* Complete supported payments
 
-Businesses can:
+---
 
-Capture visitor information
-Identify potential customers
-Qualify leads through conversations
-Review customer details
-Track potential opportunities
-Use conversations to understand customer requirements
+## 🗄️ Database
 
-This helps businesses focus their time on customers who are genuinely interested in their products or services.
+The application uses **PostgreSQL** as its relational database and **Prisma ORM** for database operations.
 
-📅 Appointment Booking
+Major entities include:
 
-Customers can schedule appointments through the platform.
+* User
+* Business
+* Chatbot
+* Conversation
+* Lead
+* Appointment
+* Product/Service
+* Transaction
 
-The chatbot can guide customers through the booking process and help them find suitable available times.
+---
 
-Businesses can manage their appointments while customers get a simple and convenient booking experience.
+## 🔐 Authentication
 
-🛍️ Products & Services
+The platform uses **Clerk** for authentication and user management.
 
-Businesses can manage their products and services within Corinna AI.
+It provides:
 
-They can provide information such as:
+* User registration
+* User login
+* Secure authentication
+* Session management
+* User management
 
-Product/service name
-Description
-Pricing
-Relevant details
+---
 
-The AI can then use this information during customer conversations to provide more relevant answers and guide customers toward suitable offerings.
+## 🧠 AI Integration
 
-💳 Payments
+The chatbot uses the **OpenAI API** to understand customer messages and generate contextual responses.
 
-Corinna AI supports business payment functionality, allowing customers to move from a sales conversation toward a purchase.
+The AI component is designed to:
 
-The platform also provides businesses with visibility into their payment and sales activity.
+1. Receive customer messages.
+2. Understand the customer's intent.
+3. Process relevant business information.
+4. Generate an appropriate response.
+5. Continue the conversation.
+6. Identify potential sales opportunities.
+7. Collect relevant lead information.
 
-📊 Business Dashboard
+---
 
-The centralized dashboard gives businesses an overview of their platform activity.
+## 💳 Payment Integration
 
-It provides access to areas such as:
+The platform integrates **Stripe** for online payment functionality.
 
-Leads
-Appointments
-Sales
-Revenue
-Customer activity
-Products & services
-Chatbot management
-Business settings
-
-The goal is to keep important business operations accessible from one place.
-
-📧 Email Marketing
-
-Businesses can use captured customer and lead information for email communication and marketing activities.
-
-This allows businesses to stay connected with potential and existing customers beyond the initial chatbot conversation.
-
-🎨 Custom Branding
-
-Corinna AI allows businesses to create a chatbot experience that matches their brand.
-
-Customization can include:
-
-Brand identity
-Colors
-Chatbot appearance
-Business information
-Customer-facing experience
-
-This helps the chatbot feel like a natural part of the company's website rather than a separate third-party tool.
-
-🌐 Business & Domain Configuration
-
-Businesses can configure Corinna AI according to their own website and business requirements.
-
-The AI experience can be tailored around:
-
-Business information
-Products and services
-Customer requirements
-Sales context
-Website/domain
-Brand identity
-🔄 How Corinna AI Works
-For Businesses
-Create Account
-      ↓
-Set Up Business
-      ↓
-Configure AI Assistant
-      ↓
-Add Products & Services
-      ↓
-Customize Branding
-      ↓
-Connect to Website
-      ↓
-Start Receiving Customers
-      ↓
-Capture & Qualify Leads
-      ↓
-Book Appointments / Generate Sales
-      ↓
-Monitor Business Activity
-
-For Customers
-Visit Website
-      ↓
-Open AI Chat
-      ↓
-Ask Questions
-      ↓
-AI Understands Requirements
-      ↓
-Get Relevant Information
-      ↓
-Discuss Products / Services
-      ↓
-Provide Contact Information
-      ↓
-Book Appointment or Purchase
-
-💼 Who Is Corinna AI For?
-
-Corinna AI is designed for businesses that want to automate customer engagement and improve their sales process.
-
-It can be useful for:
-
-Small businesses
-Service-based businesses
-Online businesses
-Agencies
-Sales teams
-Businesses that rely on website leads
-Businesses that require appointment booking
-Businesses looking to automate customer support and sales conversations
-📈 Business Benefits
-
-Corinna AI helps businesses:
-
-Engage website visitors 24/7
-Capture more leads
-Qualify potential customers automatically
-Reduce repetitive manual conversations
-Automate appointment scheduling
-Provide faster customer responses
-Improve the customer experience
-Centralize business activity
-Create personalized sales conversations
-Move customers toward conversion
-🧩 Main Platform Areas
-Area	Purpose
-🤖 AI Assistant	Automated customer and sales conversations
-💬 Chatbot	Website-based customer interaction
-🎯 Leads	Capture and manage potential customers
-📅 Appointments	Schedule and manage customer bookings
-🛍️ Products & Services	Manage business offerings
-💳 Payments	Support customer purchases and payment activity
-📊 Dashboard	View important business activity
-📧 Email Marketing	Communicate with leads and customers
-🎨 Branding	Customize the customer-facing experience
-⚙️ Business Settings	Manage business-specific configuration
-🌟 Why Corinna AI?
-
-Traditional websites often leave visitors waiting for a response or require businesses to manually handle every customer inquiry.
-
-Corinna AI changes this by giving businesses an AI-powered sales assistant that is available whenever customers need it.
-
-From the first question to lead qualification, appointment scheduling, and purchase — Corinna AI helps automate the customer journey while giving businesses a centralized place to manage their operations.
-
-🎯 Project Vision
-
-The vision behind Corinna AI is to make AI-powered sales automation accessible to businesses of all sizes.
-
-The platform brings customer conversations, lead generation, appointment scheduling, product information, payments, and business management together into a single experience.
-
-Turn website visitors into conversations.
-Turn conversations into leads.
-Turn leads into customers.
-
-📱 User Experience
-
-Corinna AI is designed to provide a smooth experience across:
-
-Desktop
-Tablet
-Mobile
-Business dashboards
-Customer-facing websites
-
-The interface focuses on simplicity, clarity, and ease of use for both businesses and their customers.
-
-🏗️ Project Status
-
-Corinna AI is a full-featured SaaS AI sales automation project focused on helping businesses automate customer engagement and sales workflows.
-
-The project demonstrates a complete product experience covering:
-
-Customer Engagement → AI Conversations → Lead Generation → Appointment Booking → Sales → Business Management
-
-📄 Documentation
-
-For a detailed functional overview of the platform, its features, user journeys, and business capabilities, refer to the project documentation.
-
-👨‍💻 Project
-
-Corinna AI
-AI-Powered Sales Automation & Customer Engagement Platform
-
-Built to help businesses engage customers, capture opportunities, and automate their sales journey.
+The payment module is designed to support secure payment processing and business transactions through the application.
+
+---
+
+## ⚡ Real-Time Features
+
+**Pusher** is used for real-time communication within the platform.
+
+It supports features such as:
+
+* Real-time messages
+* Live conversation updates
+* Instant notifications
+* Dynamic dashboard updates
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure the following are installed:
+
+* Node.js
+* npm
+* Git
+* PostgreSQL
+
+You will also need accounts/API credentials for the required third-party services.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone <your-repository-url>
+```
+
+Navigate to the project:
+
+```bash
+cd <project-folder>
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+## 📈 Future Enhancements
+
+Future versions of the platform can include:
+
+* Advanced AI lead scoring
+* Voice-based AI conversations
+* Multilingual chatbot support
+* Advanced analytics
+* CRM integrations
+* Automated email campaigns
+* AI-generated sales reports
+* Improved AI personalization
+* Mobile application
+* Advanced chatbot memory
+
+---
+
+## 📄 License
+
+This project is developed for educational and academic purposes.
